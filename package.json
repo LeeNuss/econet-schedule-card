@@ -1,8 +1,8 @@
 {
-  "name": "econet-schedule-card",
+  "name": "econext-schedule-card",
   "version": "1.0.0",
-  "description": "Home Assistant Lovelace card for ecoNET-300 weekly schedules",
-  "main": "dist/econet-schedule-card.js",
+  "description": "Home Assistant Lovelace card for ecoNEXT weekly schedules",
+  "main": "dist/econext-schedule-card.js",
   "type": "module",
   "scripts": {
     "build": "rollup -c",

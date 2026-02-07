@@ -1,8 +1,8 @@
 /**
- * ecoNET Schedule Card
+ * ecoNEXT Schedule Card
  *
  * A Home Assistant Lovelace card for displaying and editing
- * weekly schedules from the ecoNET-300 integration.
+ * weekly schedules from the ecoNEXT integration.
  */
 
-export { EconetScheduleCard } from './econet-schedule-card';
+export { EconextScheduleCard } from './econext-schedule-card';

@@ -1,5 +1,5 @@
 /**
- * Type definitions for ecoNET Schedule Card
+ * Type definitions for ecoNEXT Schedule Card
  */
 
 // Home Assistant types (subset needed for the card)
@@ -34,9 +34,9 @@ export type DayKey =
   | 'saturday';
 
 // Card configuration
-export interface EconetScheduleCardConfig {
+export interface EconextScheduleCardConfig {
   type: string;
-  /** Entity prefix, e.g., "number.econet_next_dhw_schedule" */
+  /** Entity prefix, e.g., "number.econext_dhw_schedule" */
   schedule_entity_prefix: string;
   /** Optional card title */
   title?: string;

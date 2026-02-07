@@ -1,5 +1,5 @@
 /**
- * Bitfield encoding/decoding utilities for ecoNET-300 schedules.
+ * Bitfield encoding/decoding utilities for ecoNEXT schedules.
  *
  * Schedule format:
  * - Each schedule parameter is a uint32 bitfield

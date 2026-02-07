@@ -5,7 +5,7 @@ import terser from '@rollup/plugin-terser';
 export default {
   input: 'src/index.ts',
   output: {
-    file: 'dist/econet-schedule-card.js',
+    file: 'dist/econext-schedule-card.js',
     format: 'es',
     sourcemap: true,
   },

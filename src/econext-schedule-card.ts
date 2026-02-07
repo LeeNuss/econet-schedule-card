@@ -5,7 +5,7 @@ import { styleMap } from 'lit/directives/style-map.js';
 
 import type {
   HomeAssistant,
-  EconetScheduleCardConfig,
+  EconextScheduleCardConfig,
   DayKey,
   DaySchedule,
 } from './types';
@@ -27,18 +27,18 @@ import { cardStyles } from './styles';
 
 const HOURS = 24;
 
-@customElement('econet-schedule-card')
-export class EconetScheduleCard extends LitElement {
+@customElement('econext-schedule-card')
+export class EconextScheduleCard extends LitElement {
   @property({ attribute: false }) public hass!: HomeAssistant;
 
-  @state() private _config?: EconetScheduleCardConfig;
+  @state() private _config?: EconextScheduleCardConfig;
   @state() private _selectedDay: DayKey = getCurrentDay();
 
   static get styles(): CSSResultGroup {
     return cardStyles;
   }
 
-  public setConfig(config: EconetScheduleCardConfig): void {
+  public setConfig(config: EconextScheduleCardConfig): void {
     if (!config.schedule_entity_prefix) {
       throw new Error('Please define schedule_entity_prefix');
     }
@@ -66,9 +66,9 @@ export class EconetScheduleCard extends LitElement {
     };
   }
 
-  public static getStubConfig(): Partial<EconetScheduleCardConfig> {
+  public static getStubConfig(): Partial<EconextScheduleCardConfig> {
     return {
-      schedule_entity_prefix: 'number.econet_next_dhw_schedule',
+      schedule_entity_prefix: 'number.econext_dhw_schedule',
       title: 'Schedule',
     };
   }
@@ -287,14 +287,14 @@ declare global {
     }>;
   }
   interface HTMLElementTagNameMap {
-    'econet-schedule-card': EconetScheduleCard;
+    'econext-schedule-card': EconextScheduleCard;
   }
 }
 
 window.customCards = window.customCards || [];
 window.customCards.push({
-  type: 'econet-schedule-card',
-  name: 'ecoNET Schedule Card',
-  description: 'Display and edit weekly schedules from ecoNET-300 integration',
+  type: 'econext-schedule-card',
+  name: 'ecoNEXT Schedule Card',
+  description: 'Display and edit weekly schedules from ecoNEXT integration',
   preview: true,
 });
